@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autobiografía de José Pablo Xuya</title>
+  <style>
+    body, html {
+      margin: 0;   
+      padding: 0; 
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #eee;
+      background: url('https://wallpaperset.com/w/full/d/e/6/67059.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+    iframe.video-fondo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      opacity: 0.7;
+    }
+
+    .menu-lateral {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding-top: 60px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.7);
+      overflow-y: auto;
+      box-sizing: border-box;
+      scrollbar-width: thin;
+      scrollbar-color: #7E1212 transparent;
+    }
+
+    /* Scrollbar para navegadores basados en WebKit */
+    .menu-lateral::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .menu-lateral::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .menu-lateral::-webkit-scrollbar-thumb {
+      background-color: #7E1212;
+      border-radius: 4px;
+    }
+
+    .menu-lateral a {
+      color: #B51A1A; /* rojo del footer */
+      background-color: rgba(255, 255, 255, 0.07);
+      font-weight: bold;
+      padding: 12px 20px;
+      margin: 5px 0;
+      width: 80%;
+      text-align: center;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .menu-lateral a:hover {
+      background-color: #7E1212; /* rojo oscuro */
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px 0;
+      }
+      .menu-lateral a {
+        margin: 0 10px;
+        width: auto;
+      }
+    }
+
+    .contenido-principal {
+      margin-left: 200px;
+      padding: 40px 30px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 3;
+      position: relative;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #A3C9F1;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.85);
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #ddd;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <iframe 
+      class="video-fondo" 
+      src="https://www.youtube.com/embed/gDHeE1IMnbA?autoplay=1&mute=1&loop=1&playlist=gDHeE1IMnbA" 
+      frameborder="0" 
+      allowfullscreen 
+      allow="autoplay"
+      ></iframe>
+  </header>
+
+  <nav class="menu-lateral">
+    <a href="https://xuya-23.github.io/historia-familiar-/">Historia Familiar</a>
+    <a href="https://xuya-23.github.io/ni-es/">Niñez</a>
+    <a href="https://xuya-23.github.io/adolescencia/">Adolescencia</a>
+    <a href="https://xuya-23.github.io/personal/">Personal</a>
+    <a href="https://xuya-23.github.io/academico/">Académico</a>
+    <a href="https://xuya-23.github.io/metas/">Metas</a>
+    <a href="https://xuya-23.github.io/pasatiempos/">Pasatiempos</a>
+    <a href="https://xuya-23.github.io/deportes/">Deportes</a>
+    <a href="https://xuya-23.github.io/lo-que-me-gusta-/">Lo que me gusta</a>
+    <a href="https://xuya-23.github.io/lo-que-no-me-gusta-/">Lo que no me gusta</a>
+    <a href="https://xuya-23.github.io/a-quienes-admiro-/">A quienes admiro</a>
+    <a href="https://xuya-23.github.io/fotos-/">Fotos</a>
+    <a href="https://xuya-23.github.io/sitios-recomendados-/">Sitios recomendados</a>
+    <a href="https://xuya-23.github.io/videos-/">Videos</a>
+    <a href="conclusion.html">conclusion</a>
+
+  </nav>
+
+  <main class="contenido-principal">
+    <h1>José Pablo David Xuya Hernández</h1>
+    <p>Bienvenido a mi autobiografía personal. Explora el menú para conocer más sobre mi historia, intereses y metas.</p>
+  </main>
+
+</body>
+</html>
+
